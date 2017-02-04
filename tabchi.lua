@@ -217,14 +217,15 @@ function process(msg)
           }, dl_cb, nil)
         else
           local text = [[
-*پنل مدیریتی ربات :*
-کاربران: ]] .. pvs .. [[
+*Bots Panel :*
+          
+ _Users_ ]] .. pvs .. [[
 
-گروه ها : ]] .. gps .. [[
+_Groups_ ]] .. gps .. [[
 
-سوپر گروه ها : ]] .. sgps .. [[
+_SuperGroups_: ]] .. sgps .. [[
 
-لینک های ذخیره شده : ]] .. links
+_saved Links_: ]] .. links
           tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, "md")
         end
       end
